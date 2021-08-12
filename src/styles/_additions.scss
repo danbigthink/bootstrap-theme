@@ -55,20 +55,20 @@ $info-alert-border-level: -4;
   @return $alert-border-level;
 }
 
-// Add panel-success, panel-info etc. equivalents (like bootstrap v3)
-@each $color, $value in (primary, secondary, success, info, warning, danger) {
-  .card-#{$color} {
-    border-color: theme-color-level($color, panel-border-level($color));
-    > .card-header {
-      @include gradient-bg(theme-color-level($color, $alert-bg-level));
-      border-color: theme-color-level($color, panel-border-level($color));
-      color: theme-color-level($color, $alert-color-level);
-    }
-    > .card-footer {
-      border-color: theme-color-level($color, panel-border-level($color));
-    }
-  }
-}
+//// Add panel-success, panel-info etc. equivalents (like bootstrap v3)
+//@each $color, $value in (primary, secondary, success, info, warning, danger) {
+//  .card-#{$color} {
+//    border-color: theme-color-level($color, panel-border-level($color));
+//    > .card-header {
+//      @include gradient-bg(theme-color-level($color, $alert-bg-level));
+//      border-color: theme-color-level($color, panel-border-level($color));
+//      color: theme-color-level($color, $alert-color-level);
+//    }
+//    > .card-footer {
+//      border-color: theme-color-level($color, panel-border-level($color));
+//    }
+//  }
+//}
 // Light text on dark header, with dark border. When you really want to look like the
 // old default panel class
 .card-default {

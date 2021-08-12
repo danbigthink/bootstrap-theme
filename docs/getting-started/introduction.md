@@ -10,7 +10,7 @@ toc: true
 ---
 
 ## Packages
-
+NOTE: for the moment none of this is true
 For the moment, the theme package can be installed using something like this in your
 `package.json`:
 

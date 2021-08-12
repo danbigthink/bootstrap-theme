@@ -5,6 +5,35 @@
 // Reference: http://www2.gov.bc.ca/gov/content/governments/services-for-government/policies-procedures/web-content-development-guides/developers-guide/css-elements
 // sass-lint:disable force-element-nesting, force-pseudo-nesting
 
+
+
+@mixin hover() {
+  &:hover { @content; }
+}
+
+@mixin hover-focus() {
+  &:hover,
+  &:focus {
+    @content;
+  }
+}
+
+@mixin plain-hover-focus() {
+  &,
+  &:hover,
+  &:focus {
+    @content;
+  }
+}
+
+@mixin hover-focus-active() {
+  &:hover,
+  &:focus,
+  &:active {
+    @content;
+  }
+}
+
 .nav-link,
 .navbar-brand,
 .page-link,
@@ -88,9 +117,9 @@ footer nav {
 
 // Override table row border colours
 @each $color, $value in $theme-colors {
-  @include table-row-variant(
+  @include table-variant(
     $color,
-    theme-color-level($color, $table-bg-level),
+    //theme-color-level($color, $table-bg-level),
     $table-border-color
   );
 }

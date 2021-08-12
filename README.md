@@ -4,7 +4,7 @@
 
 [Full documentation and demonstrations of the theme](https://bcgov.github.io/bootstrap-theme/)
 
-A Bootstrap version 4.3 BC Government look-and-feel featuring:
+A wip Bootstrap version 5.1 BC Government look-and-feel featuring:
 - The [BC Sans](https://www2.gov.bc.ca/gov/content/governments/services-for-government/policies-procedures/bc-visual-identity/bc-sans)
   typeface
 - Compatibility with pure Bootstrap markup
